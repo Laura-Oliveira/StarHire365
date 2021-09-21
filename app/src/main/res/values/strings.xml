@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StarHire</string>
+    <string name="txt_description_image"> Logo Star Hire 365</string>
+    <string name="txt_title_splash_screen">Formação Mobile - Android</string>
+    <string name="txt_subtitle"> O que é o StarHire365? </string>
+    <string name="txt_paragraph"> O StarHire365 é um programa de formação voltado para profissionais
+    da área de tecnologia de forma facilitar o processo de aprendizado destes profissionais
+    atráves de cursos de tecnologia e soft skills.</string>
+    <string name="txt_paragraph_1">E nesta edição o foco é na formação de profissionais Mobile utilizando a linguagem Kotlin</string>
+</resources>
