@@ -1,4 +1,5 @@
 <resources>
+    <!-- =============== STRINGS SCREEN SPLASH SCREEN =============== -->
     <string name="app_name">StarHire</string>
     <string name="txt_description_image"> Logo Star Hire 365</string>
     <string name="txt_title_splash_screen">Formação Mobile - Android</string>
@@ -7,4 +8,13 @@
     da área de tecnologia de forma facilitar o processo de aprendizado destes profissionais
     atráves de cursos de tecnologia e soft skills.</string>
     <string name="txt_paragraph_1">E nesta edição o foco é na formação de profissionais Mobile utilizando a linguagem Kotlin</string>
+    <string name="title_activity_age">AgeActivity</string>
+
+    <!-- =============== STRINGS SCREEN AGE =============== -->
+    <string name="txt_description_logo"> Logo Star Hire 365</string>
+    <string name="txt_title_screen_age"> Deseja saber sua idade? Então preencha os campos abaixo</string>
+    <string name="txt_hint_name_screen_age"> Nome </string>
+    <string name="txt_hint_year_screen_age"> Ano de Nascimento </string>
+    <string name="txt_calculate_age"> Calculate </string>
+    <string name="txt_clear"> Clear</string>
 </resources>

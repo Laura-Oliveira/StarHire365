@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StarHire365">
         <activity
+            android:name=".ResultAgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_age"
+            android:theme="@style/Theme.StarHire365.NoActionBar">
+
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
@@ -17,7 +27,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

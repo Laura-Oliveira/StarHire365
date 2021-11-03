@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="txt_description_logo"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/ic_logo_round"
+            >
+
+        </ImageView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_screen_age"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="75dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/txt_title_screen_age"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
+            >
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_name_screen_age"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:hint="@string/txt_hint_name_screen_age"
+            app:endIconMode="clear_text"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_name_screen_age_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_year_screen_age"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:hint="@string/txt_hint_year_screen_age"
+            app:endIconMode="clear_text"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_year_screen_age_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_clean"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="90sp"
+            android:layout_height="70sp"
+            android:backgroundTint="@color/btn_color"
+            android:textColor="@color/txt_color"
+            android:text="@string/txt_clear"
+            android:layout_marginLeft="4sp"
+            android:onClick="clearInputs"
+            >
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_calculate_age"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="130sp"
+            android:layout_height="70sp"
+            android:strokeColor="@color/btn_clear"
+            android:textColor="@color/txt_color"
+            android:text="@string/txt_calculate_age"
+            android:layout_marginLeft="132sp"
+            android:onClick="calculateAge"
+            >
+        </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+<!--    style="@style/Widget.AppCompat.Button.Colored"-->
