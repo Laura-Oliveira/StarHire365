@@ -1,10 +1,14 @@
 package com.starhire365
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import java.time.LocalDate
+import java.util.*
 
 class AgeActivity : AppCompatActivity()
 {
@@ -29,13 +33,15 @@ class AgeActivity : AppCompatActivity()
         txt_year = year?.getText()?.clear().toString();
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     fun calculateAge(view:android.view.View)
     {
         txt_name = name?.getText().toString();
         txt_year = year?.getText().toString();
 
         var yearInt = txt_year?.toInt();
-        var age = 2021 - yearInt!!;
+        val actualYear = LocalDate.now().year;
+        var age = actualYear - yearInt!!;
 
         Toast.makeText(this, "$txt_name sua idade é $age", Toast.LENGTH_LONG).show();
 //        val activity:Intent = Intent(this, ResultAgeActivity::class.java);
