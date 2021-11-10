@@ -1,8 +1,9 @@
-package com.starhire365
+package com.starhire365.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.starhire365.R
 
 class MainActivity : AppCompatActivity()
 {

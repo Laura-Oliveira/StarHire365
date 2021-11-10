@@ -1,10 +1,12 @@
-package com.starhire365
+package com.starhire365.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.starhire365.AgeActivity
+import com.starhire365.R
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
